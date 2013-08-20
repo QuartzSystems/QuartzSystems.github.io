@@ -1,37 +1,8 @@
-/*
-Inps (Inputs) is a CSS lib for making your inputs look cool
-(By Qsysmine)
-*/
-
 .button, input[type=button], input[type=submit] {
   font-family: "Helvetica";
   border: 3px solid #000000;
-  border-radius:10px;
-  box-shadow: 4px 4px #000;
-  background-color: #BADA55;
-  cursor:pointer;
-  height:3em;
-  font-size:1em;
-  padding:3px;
-  margin-right:5px;
-  margin-left:5px;
-  margin-bottom:5px;
-  margin-top:5px;
-}
-
-.button:hover, input[type=button]:hover, input[type=submit]:hover {
-  box-shadow: 2px 2px #000;
-  position:relative;
-  top:2px;
-  left:2px;
-}
-
-.button:active, input[type=button]:active, input[type=submit]:active {
-  box-shadow: 0 0 .button, input[type=button], input[type=submit] {
-  font-family: "Helvetica";
-  border: 3px solid #000000;
-  border-radius:10px;
-  box-shadow: 4px 4px #000;
+  border-radius:0;
+  box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
   background-color: #ccc;
   cursor:pointer;
   height:3em;
@@ -44,7 +15,7 @@ Inps (Inputs) is a CSS lib for making your inputs look cool
 }
 
 .button:hover, input[type=button]:hover, input[type=submit]:hover {
-  box-shadow: 2px 2px #000;
+  box-shadow: 1px 1px #000, 2px 2px #000;
   position:relative;
   top:2px;
   left:2px;
@@ -81,30 +52,4 @@ input:not([type=submit]):not([type=file]):not([type=button]), select
 
 .button-green {
   background-color:#BADA55;
-}#000;
-  position:relative;
-  top:4px;
-  left:4px;
-}
-
-input:not([type=submit]):not([type=file]):not([type=button]), select
-{
-  font-family: "Helvetica";
-  font-size:1em;
-  border:3px solid #000;
-  padding:3px;
-  border-radius:10px;
-  box-shadow: 4px 4px #000;
-  margin-right:5px;
-  margin-left:5px;
-  margin-bottom:5px;
-  margin-top:5px;
-}
-
-.button-blue {
-  background-color:#7C74D6;
-}
-
-.button-red {
-  background-color:#DB4D4D;
 }
