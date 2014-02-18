@@ -1,0 +1,37 @@
+* {
+    font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Lato";
+    font-weight:300;
+    }
+#title {
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center
+    flex: 1;
+}
+#navigation {
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    flex: 1;
+}
+a {
+    color: blue;
+}
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    flex-direction: column;
+}
+#content {
+    padding:1em;
+}
+.yt-vid {
+    padding:1em;
+}
+.member {
+    
+}
