@@ -33,5 +33,11 @@ a {
     padding:1em;
 }
 .member {
-    
+    cursor:pointer;
+}
+.memInfo {
+    display:none;
+}
+.twc {
+    font-family:"entyposocialregular";
 }
