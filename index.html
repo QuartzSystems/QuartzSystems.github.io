@@ -4,28 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Quartz Systems</title>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400|Raleway:400,300,100' rel='stylesheet' type='text/css'>
-    <link href="./entypoFontKit/stylesheet.css" rel="stylesheet">
-    <link rel="stylesheet" href="/colors.min.css">
-    <link rel="stylesheet" href="/style.css">
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="/scripts.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="flexContainer">
-        <div id="title" class="bg-white">
-            <h1>
+    <div class="main">
+        <div class="headerCont">
+            <a href="/" class="header h1">
                 Quartz Systems
-            </h1>
+            </a>
+            <h2 class="comfortaa">Video Central</h2>
         </div>
-        <div id="navigation" class="bg-aqua">
-            <a href="#">Home</a>&nbsp;|&nbsp; 
-            <a href="#videos">Videos</a>&nbsp;|&nbsp;<a href="#members">Members</a>
-        </div>
-        <div id="content" class="bg-teal">
-            
+        <div class="nav comfortaa">
+            <a href="/#home" class="h3">Home</a>
+            <a href="/#who" class="h3">Who</a>
+            <a href="/#videos" class="h3">Videos</a>
         </div>
     </div>
+    <div id="home">
+        <h3 class="comfortaa">Home.</h3>
+        <p>Quartz Systems is a small YouTube channel that makes videos for fun.</p>
+    </div>
+    <div id="who">
+        <h3 class="comfortaa">Who.</h3>
+        <a href="http://qsysmine.tk"><img src="/qsysmine.png"></a>
+        <img src="/yoshitech.png">
+        <img src="/orbiter34.png">
+    </div>
+    <div id="videos">
+        <h3 class="comfortaa">Videos.</h3>
+        <a class="comfortaa h4" target="_blank" href="http://youtube.com/quartzsystems">YouTube</a><br/>
+        <div id="vids"></div>
+    </div>
 </body>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="./script.js"></script>
+<script src="http://qsysmine.tk/yt/?user=quartzsystems"></script>
 </html>
