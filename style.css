@@ -1,0 +1,115 @@
+body {
+    font-family: "Roboto","HelveticaNeue-Thin", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 100;
+    font-size: 2.5vw;
+}
+.comfortaa {
+    font-family: 'Comfortaa', 'Helvetica Neue', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #85144B;
+    text-decoration: none;
+    font-weight: 100;
+}
+.header {
+    font-family: "Roboto","HelveticaNeue-Thin", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: #000;
+}
+h1,
+.h1 {
+    font-size: 10vw;
+    margin: 0;
+    padding: 0;
+}
+h2,
+.h2 {
+    font-size: 8vw;
+    margin: 0;
+    padding: 0;
+}
+h3,
+.h3 {
+    font-size: 6vw;
+    margin: 0;
+    padding: 0;
+}
+h4,
+.h4 {
+    font-size: 4vw;
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.nav>a {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    text-decoration: none;
+}
+.nav>a:hover {
+    background-color: #aaa;
+}
+.headerCont {
+    padding: 1vw;
+    background-color: #ccc;
+}
+.main {
+    height:100%;
+}
+#home {
+    background-color: #eee;
+    padding: 1vw;
+    position:absolute;
+    top:100%;
+    bottom:-100%;
+    left:0;
+    right:0;
+}
+#who {
+    background-color: #ddd;
+    padding: 1vw;
+    position:absolute;
+    top:200%;
+    bottom:-200%;
+    left:0;
+    right:0;
+}
+#videos {
+    background-color: #ccc;
+    padding: 1vw;
+    position:absolute;
+    top:300%;
+    bottom:-300%;
+    left:0;
+    right:0;
+    display:flex;
+    flex-direction: column;
+}
+#vids {
+    overflow:scroll;
+    flex:1;
+    background-color:#eee;
+    border-radius:1vw;
+}
+div.page {
+    height: 100%;
+}
+#youTube {
+    display:none;
+    background-color:#000;
+    border-radius:15px;
+    color:#fff;
+    overflow:hide;
+}
+.toTop {
+    position: absolute;
+    top:0;
+    right:0;
+}
