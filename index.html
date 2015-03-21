@@ -2,52 +2,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Quartz Systems</title>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900italic,900,300italic,300,100italic,100|Comfortaa:400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Quartz Systems - Video, Software, and Design</title>
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <div id="main" class="main">
-        <div class="headerCont">
-            <a href="/" class="header h1">
-                Quartz Systems
-            </a>
-            <h2 class="comfortaa">Video Central</h2>
+  <nav><a href="#/" class="selected" data-pg="#pg1" id="homeLink">Home</a>&nbsp;&bull;&nbsp;
+    <a href="#/portfolio" id="portfolioLink" data-pg="#pg4"></a><a id="aboutLink" href="#/whatwedo" data-pg="#pg2">What we do</a>&nbsp;&bull;&nbsp;<a id="whoLink" href="#/whoweare" data-pg="#pg3">Who we are</a>&nbsp;&bull;&nbsp;<a href="http://www.youtube.com/subscription_center?add_user=quartzsystems" class="redText">YouTube Channel</a>
+  </nav>
+  <div class="pageView" id="pageViewMain">
+    <div class="page top" id="pg1">
+      <img id="logo" src="geometre.png" alt="Quartz Systems">
+      <h2>High Quality Videos on a Low Quality Schedule. <a href="#/whatwedo">Learn more.</a>
+      </h2>
+    </div>
+    <div class="page" id="pg2">
+      <h1>What we do.</h1>
+      <p>Quartz is the creator of high-quality audiovisual products. We <a href="#/portfolio">build websites</a> and <a href="http://www.youtube.com/subscription_center?add_user=quartzsystems">create videos</a>.
+        <br>
+        <span class="btn" data-href="#/whoweare">Who's behind this?</span>
+      </p>
+    </div>
+    <div class="page top" id="pg3">
+      <h1>Who we are.</h1>
+      <table>
+        <tr>
+          <td>
+            <h1>
+              <span class="stylish">{</span>ARI
+              <span class="stylish">}</span>
+            </h1>
+            <p><b>A</b>&nbsp;programmer from America, he has made nearly all of the Quartz content.</p>
+            <a href="http://qsysmine.tk/">Website</a>&nbsp;&bull;&nbsp;<a href="http://github.com/qsysmine">Github</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h1>{ROHIN}</h1>
+            <p><b>A</b>&nbsp;good video producer and aspiring animator, he co-founded Quartz.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="page" id="pg4">
+      <h1>Portfolio.</h1>
+      <div id="portfolio-wrapper">
+        <div class="card">
+          <a href="http://firedeck.tk/">
+            <h2>Fire Deck</h2>
+          </a>
+          <p>Fire Deck is a free alternative to <a href="http://peardeck.com/">Pear Deck</a> built with Firebase.</p>
         </div>
-        <div class="nav comfortaa">
-            <a href="/#home" class="h3">Home</a>
-            <a href="/#who" class="h3">Who</a>
-            <a href="/#videos" class="h3">Videos</a>
+        <div class="card">
+          <a href="http://profoundity.tk/">
+            <h2>Profoundity</h2>
+          </a>
+          <p>Profoundity is a free, easy-to-use website which helps display pithy phrases profoundly.</p>
         </div>
+        <div class="card">
+          <h2>PLATONIq</h2>
+          <p>Coming soon.</p>
+        </div>
+      </div>
     </div>
-    <div id="home">
-        <a href="#main" class="toTop comfortaa">To Top</a>
-        <h3 class="comfortaa">Home.</h3>
-        <p>Quartz Systems is a small YouTube channel that makes videos for fun.</p>
-    </div>
-    <div id="who">
-        <a href="#main" class="toTop comfortaa">To Top</a>
-        <h3 class="comfortaa">Who?</h3>
-        <a href="http://qsysmine.tk">
-            <img src="/qsysmine.png">
-        </a>
-        <img src="/yoshitech.png">
-        <img src="/orbiter34.png">
-    </div>
-    <div id="videos">
-        <a href="#main" class="toTop comfortaa">To Top</a>
-        <h3 class="comfortaa">Videos.</h3>
-        <a class="comfortaa h4" target="_blank" href="http://youtube.com/quartzsystems" id="chanL">Channel
-            <span id="youTube">YouTube</span>
-        </a>
-        <br/>
-        <div id="vids"></div>
-    </div>
+  </div>
 </body>
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="./script.js"></script>
-<script src="http://qsysmine.tk/yt/?user=quartzsystems"></script>
+<script src="https://rawgit.com/flatiron/director/master/build/director.min.js">
+</script>
+<script src="eD/jQuery/dist/jquery.min.js"></script>
+<script src="js/index.js"></script>
 
 </html>
