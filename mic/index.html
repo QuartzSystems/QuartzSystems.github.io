@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    * {
+      font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif, Arial;
+    }
+    
+    .absoluteCentre {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-top: 2em;
+      background-color: #FFF;
+      padding: 1em;
+      border-radius: 3px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    }
+    
+    body {
+      display: flex;
+      flex-direction: vertical;
+      background-color: #e5e5e5;
+    }
+    
+    h1 {
+      font-size: 3em;
+    }
+    
+    p {
+      font-size: 1.5em;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+</head>
+
+<body>
+  <section class="absoluteCentre">
+    <h1>Redirecting.</h1>
+    <p><a id="redirectSkip" href="http://www.amazon.com/Audio-Technica-ATR2500-USB-Cardioid-Condenser-Microphone/dp/B004QJREXM">If redirect doesn't work, click here.</a></p>
+  </section>
+</body>
+
+<script>
+  var REDIRECT_URL = "http://www.amazon.com/Audio-Technica-ATR2500-USB-Cardioid-Condenser-Microphone/dp/B004QJREXM";
+  document.getElementByID("redirectSkip").href = REDIRECT_URL;
+  setTimeout(function() {
+    location.assign(REDIRECT_URL);
+  }, 1000);
+</script>
+
+</html>
