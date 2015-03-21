@@ -89,6 +89,9 @@ nav>a.selected, nav>a.selected:focus, nav>a.selected:hover, nav>a.selected:visit
 #pg3.selected {
   background-color: #6BC6ED;
 }
+#pg4 {
+  background-color: #FFFFFF;
+}
 #logo {
   width: 20vh;
   height: 20vh;
@@ -123,4 +126,7 @@ tr.selected {
 }
 .btn:hover, .btn:active, .btn:focus, .btn:selected, .btn:visited {
   font-weight: 300;
+}
+p {
+  font-size: 1.5em;
 }
