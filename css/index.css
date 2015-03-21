@@ -1,0 +1,126 @@
+/*Font Includes*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:700,300italic,400,700italic,400italic,300);
+/*Default Styles*/
+
+body {
+  min-width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+.card {
+  margin: 1em;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  padding: 1em;
+  background-color: #FFF;
+}
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #2980b9;
+}
+a:visited, a:hover, a:focus, a:active {
+  font-weight: 400;
+}
+#homeLink {
+  color: #99464d;
+}
+#aboutLink {
+  color: #469958;
+}
+#whoLink {
+  color: #468099;
+}
+/*PageView Styles*/
+
+.pageView {
+  z-index: 90;
+}
+.pageView>.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(-150%, 0);
+  transition: transform 0.5s ease-out, background-color 0.7s linear;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #FFF;
+}
+.pageView>.page.top {
+  transform: translate(0, -150%);
+}
+.pageView>.page.selected {
+  transform: translate(0, 0);
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1em;
+  border-bottom-right-radius: 1em;
+}
+nav>a {
+  color: #2980b9;
+  cursor: pointer;
+}
+nav>a.selected, nav>a.selected:focus, nav>a.selected:hover, nav>a.selected:visited, nav>a.selected:active {
+  color: #000;
+  cursor: default;
+  pointer-events: none;
+  font-weight: bold;
+}
+/*Other Styles*/
+
+#pg1, #pg2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#pg2.selected {
+  background-color: #6BED88;
+}
+#pg3.selected {
+  background-color: #6BC6ED;
+}
+#logo {
+  width: 20vh;
+  height: 20vh;
+  transform: scale(0);
+  transition: transform 0.4s ease-out;
+}
+#logo.loaded {
+  transform: scale(1.0);
+}
+.redText {
+  color: red;
+}
+tr {
+  transform: scale(0);
+  transition: transform 0.3s ease-out;
+}
+tr.selected {
+  transform: scale(1);
+}
+.btn {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  background-color: #FFF;
+  color: #000;
+  cursor: pointer;
+}
+.btn:hover, .btn:active, .btn:focus, .btn:selected, .btn:visited {
+  font-weight: 300;
+}
