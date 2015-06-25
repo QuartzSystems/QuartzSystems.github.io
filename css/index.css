@@ -55,10 +55,10 @@ a:visited, a:hover, a:focus, a:active {
     -o-transform: translate(-150%, 0);
     -webkit-transform: translate(-150%, 0);
     transform: translate(-150%, 0);
-    -moz-transition: -moz-transform 0.5s ease-out, background-color 0.7s linear;
-    -o-transition: -o-transform 0.5s ease-out, background-color 0.7s linear;
-    -webkit-transition: -webkit-transform 0.5s ease-out, background-color 0.7s linear;
-    transition: transform 0.5s ease-out, background-color 0.7s linear;
+    -moz-transition: -moz-transform 0.5s cubic-bezier(0,1,.38,1), background-color 0.7s linear;
+    -o-transition: -o-transform 0.5s cubic-bezier(0,1,.38,1), background-color 0.7s linear;
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0,1,.38,1), background-color 0.7s linear;
+    transition: transform 0.5s cubic-bezier(0,1,.38,1), background-color 0.7s linear;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     padding-left: 1em;
@@ -133,10 +133,10 @@ nav > a.selected, nav > a.selected:focus, nav > a.selected:hover, nav > a.select
     -o-transform: scale(0);
     -webkit-transform: scale(0);
     transform: scale(0);
-    -moz-transition: -moz-transform 0.4s ease-out;
-    -o-transition: -o-transform 0.4s ease-out;
-    -webkit-transition: -webkit-transform 0.4s ease-out;
-    transition: transform 0.4s ease-out
+    -moz-transition: -moz-transform 0.4s cubic-bezier(0,1,.38,1);
+    -o-transition: -o-transform 0.4s cubic-bezier(0,1,.38,1);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0,1,.38,1);
+    transition: transform 0.4s cubic-bezier(0,1,.38,1);
     }
 
 #logo.loaded {
@@ -157,10 +157,10 @@ tr {
     -o-transform: scale(0);
     -webkit-transform: scale(0);
     transform: scale(0);
-    -moz-transition: -moz-transform 0.3s ease-out;
-    -o-transition: -o-transform 0.3s ease-out;
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    transition: transform 0.3s ease-out
+    -moz-transition: -moz-transform 0.3s cubic-bezier(0,1,.38,1);
+    -o-transition: -o-transform 0.3s cubic-bezier(0,1,.38,1);
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0,1,.38,1);
+    transition: transform 0.3s cubic-bezier(0,1,.38,1);
     }
 
 tr.selected {
