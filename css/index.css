@@ -44,8 +44,8 @@ a:visited, a:hover, a:focus, a:active {
   right: 0;
   bottom: 0;
   transform: translate(-150%, 0);
-  transition: transform 0.5s ease-out, background-color 0.7s linear;
   -webkit-transition: transform 0.5s ease-out, background-color 0.7s linear;
+  transition: transform 0.5s ease-out, background-color 0.7s linear;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   padding-left: 1em;
@@ -97,9 +97,8 @@ nav>a.selected, nav>a.selected:focus, nav>a.selected:hover, nav>a.selected:visit
   width: 20vh;
   height: 20vh;
   transform: scale(0);
-  transition: transform 0.4s ease-out;
   -webkit-transition: transform 0.4s ease-out;
-
+  transition: transform 0.4s ease-out;
 }
 #logo.loaded {
   transform: scale(1.0);
@@ -109,9 +108,8 @@ nav>a.selected, nav>a.selected:focus, nav>a.selected:hover, nav>a.selected:visit
 }
 tr {
   transform: scale(0);
-  transition: transform 0.3s ease-out;
   -webkit-transition: transform 0.3s ease-out;
-
+  transition: transform 0.3s ease-out;
 }
 tr.selected {
   transform: scale(1);
